@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1D9E75" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="robots" content="noindex, nofollow" />
+    <!--
+      Same policy as index.html, minus what only the app needs (wasm for
+      web-ifc/pdf.js, blob: frames for the Anlage PDF surface).
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src 'self';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data: blob:;
+        font-src 'self' data:;
+        connect-src 'self' https://*.supabase.co wss://*.supabase.co;
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self';
+        frame-ancestors 'self';
+        upgrade-insecure-requests
+      "
+    />
+    <title>PLANoramix · Angebot</title>
+    <script type="module" crossorigin src="/assets/quote-Cc27TJYI.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index-BZzgaDDX.js">
+    <link rel="modulepreload" crossorigin href="/assets/seatPricing-DUlemXKy.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-IqV_ai3g.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

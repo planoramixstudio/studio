@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <!--
+      CSP fallback for static hosting. Prefer setting CSP via HTTP headers in production
+      (frame-ancestors / sandbox / report-uri are ignored when delivered via <meta>).
+      'wasm-unsafe-eval' is required by web-ifc and pdfjs-dist.
+      blob:/data: in img-src and worker-src cover three.js loaders, html-to-image, and pdfjs workers.
+      frame-src blob: is required by the Anlage PDF surface, which renders the picked
+      file in an <iframe> from a blob: URL; without it default-src blocks the frame
+      and Chrome shows "Dieser Inhalt ist blockiert".
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src 'self' 'wasm-unsafe-eval';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data: blob:;
+        font-src 'self' data:;
+        worker-src 'self' blob:;
+        frame-src 'self' blob:;
+        connect-src 'self' ws: wss: https://*.supabase.co wss://*.supabase.co;
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self';
+        frame-ancestors 'self';
+        upgrade-insecure-requests
+      "
+    />
+    <title>PLANoramix Studio</title>
+    <script type="module" crossorigin src="/assets/main-DD_0Qjge.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index-BZzgaDDX.js">
+    <link rel="modulepreload" crossorigin href="/assets/orgCrypto-C-Y6MQbN.js">
+    <link rel="modulepreload" crossorigin href="/assets/bootContentPacks-CBgm_qXb.js">
+    <link rel="modulepreload" crossorigin href="/assets/userStore-Coe1-rn8.js">
+    <link rel="modulepreload" crossorigin href="/assets/screenshotCapture-BrvoRnQd.js">
+    <link rel="modulepreload" crossorigin href="/assets/publicAsset-lwaDUpK7.js">
+    <link rel="modulepreload" crossorigin href="/assets/elemCloud-Bzh4rx8H.js">
+    <link rel="modulepreload" crossorigin href="/assets/routePath-DhpT4YH2.js">
+    <link rel="modulepreload" crossorigin href="/assets/seatPricing-DUlemXKy.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-IqV_ai3g.css">
+    <link rel="stylesheet" crossorigin href="/assets/main-DCre1131.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
