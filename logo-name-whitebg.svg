@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="160" viewBox="0 0 760 160">
+  <defs><style>@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&amp;family=DM+Sans:wght@300&amp;display=swap');</style></defs>
+  <rect width="760" height="160" rx="22" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <circle cx="80" cy="80" r="60" fill="#5a5a5a"/>
+  <polygon points="80,40 106,55 106,84 80,98 54,84 54,55" fill="none" stroke="#5DCAA5" stroke-width="3"/><polygon points="80,50 99,61 99,82 80,93 61,82 61,61" fill="none" stroke="#5DCAA5" stroke-width="1.9" opacity="0.55"/><polygon points="80,60 94,68 94,82 80,90 66,82 66,68" fill="#1D9E75" opacity="0.85"/><circle cx="80" cy="75" r="5" fill="#9FE1CB"/><line x1="80" y1="99" x2="80" y2="105" stroke="#5DCAA5" stroke-width="1.8" opacity="0.5"/><line x1="54" y1="111" x2="106" y2="111" stroke="#5DCAA5" stroke-width="1.4" opacity="0.4"/><circle cx="54" cy="111" r="7" fill="#5DCAA5" opacity="0.6"/><circle cx="80" cy="111" r="7" fill="#5DCAA5"/><circle cx="106" cy="111" r="7" fill="#5DCAA5" opacity="0.6"/>
+  <text x="160" y="92" font-family="Syne, sans-serif" font-weight="800" font-size="46" letter-spacing="-1">
+    <tspan fill="#5a5a5a">PLAN</tspan><tspan fill="#5DCAA5">oramix</tspan>
+  </text>
+  <text x="163" y="122" font-family="DM Sans, sans-serif" font-weight="400" font-size="17" fill="#5a5a5a" letter-spacing="6" opacity="0.55">STUDIO</text>
+</svg>
